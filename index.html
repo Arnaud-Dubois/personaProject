@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Persona Project</title>
+
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Persona Project</h1> -->
+        <img class="img__logo" src="res/personarium-logo.png" alt="Personarium logo">
+        <!-- 
+            <img class="img__icon--mid" src="res/job-icon.svg" alt="Icone job" width="32" height="32">
+            <h2>Sexe</h2>
+         -->
+        <div>
+            <div class="half">
+                <img class="img__icon--gender" src="res/male-icon.svg" alt="Icone Homme" width="32" height="32">
+                <input type="radio" id="gender--male" name="gender" value="male" checked />
+                <label for="gender--male">Homme</label>
+                
+            </div>
+            <div class="half">
+                <img class="img__icon--gender" src="res/female-icon.svg" alt="Icone Femme" width="32" height="32">
+                <input type="radio" id="gender--female" name="gender" value="female" />
+                <label for="gender--female">Femme</label>
+                
+            </div>
+        </div>
+        
+        <img class="img__icon--mid" src="res/race-icon.svg" alt="Icone race" width="32" height="32">
+        <h2>Race</h2>
+        <select name="" id="character__selector">
+            <option value="humain">Humain</option>
+            <option value="elf">Elf</option>
+            <option value="nain">Nain</option>
+            <option value="orc">Orc</option>
+            <option value="gnome">Gnome</option>
+            <option value="halfelin">Halfelin</option>
+            <option value="halfelf">Halfelf</option>
+        </select>
+
+        <img class="img__icon--mid" src="res/job-icon.svg" alt="Icone job" width="32" height="32">
+        <h2>Profession</h2>
+        <select name="" id="job__selector">
+            <option value="marchand">Marchand</option>
+            <option value="barde">Barde</option>
+            <option value="druide">Druide</option>
+            <option value="magicien">Magicien</option>
+            <option value="moine">Moine</option>
+            <option value="guerrier">Guerrier</option>
+            <option value="paladin">Paladin</option>
+            <option value="prêtre">Prêtre</option>
+            <option value="rodeur">Rodeur</option>
+            <option value="roublard">Roublard</option>
+        </select>
+
+        <hr>
+
+        <input id="btn__submit" type="submit" value="Generate Character">
+        
+        
+        <!--
+            Character Card 
+        -->
+        <div class="character__creation display--off">
+            <h3 id="character__name"></h3>
+            <div id="character__job"></div>
+            <hr>
+
+            <div class="fifth">
+                <img class="character__icon" src="res/physic-icon.jpg" alt="place img" width="56" height="56">
+            </div>
+            <div class="four-fifth">
+                <h4>Trait physique</h4>
+                <p id="character__racial"></p>
+            </div>
+            <hr>
+
+            <div class="fifth">
+                <img class="character__icon" src="res/mentalTrait-icon.jpg" alt="place img" width="56" height="56">
+            </div>
+            <div class="four-fifth">
+                <h4>Trait de caractère</h4>
+                <p id="character__trait"></p>
+            </div>
+            <hr>
+
+            <div class="fifth">
+                <img class="character__icon" src="res/item-icon.jpg" alt="place img" width="56" height="56">
+            </div>
+            <div class="four-fifth">
+                <h4>Équipement</h4>
+                <p id="character__stuff"></p>
+            </div>
+        </div>
+        <!--
+            END of Character Card 
+        -->
+    </div>
+    
+    <script src="datas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

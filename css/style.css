@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Folkard";
+    src: url("../fonts/folkard_.ttf");
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: burlywood;
+    background-image: url('../res/persona_bg.jpg');
+    font-family: 'Poppins', sans-serif;
+
+}
+
+::selection {
+    background: gold;
+  }
+
+h1, h2 {
+    font-family: 'Folkard', Arial, sans-serif;
+    color: aliceblue;
+    font-weight:normal;
+    font-style:normal;
+}
+
+h1 {
+    font-size: 3em;
+    text-align:center;
+    border-bottom:1px solid goldenrod;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin:25px 0 0 5px;
+    display: inline-block;
+}
+
+h3 {
+    font-family: 'Folkard', Arial, sans-serif;
+    font-size: 2.4em;
+    letter-spacing: 3px;
+    margin:0;  
+}
+
+h4 {
+    font-size: 1.3em;
+    margin:0;  
+}
+
+p {
+    font-size: 1.1em;
+    display: inline-block;
+    margin:0;
+}
+
+hr {
+    margin-top:15px;
+    margin-bottom:30px;
+    border:0.5px solid darkgoldenrod;
+    border:none;
+}
+
+
+label {
+    display: inline-block;
+    width:100%;
+    padding:15px;
+
+    font-family: 'Folkard', Arial, sans-serif;
+    font-size: 28px;
+    background-color:  rgb(35,35,45);
+    color: white;
+    /* border:1px solid goldenrod; */
+    cursor: pointer;
+}
+
+.character__icon {
+    border:1px solid #7B561D;
+    border-radius:5px;
+}
+
+.container {
+    width: 480px;
+    margin:0 auto;
+}
+
+select, input {
+    width:100%;
+    padding: 15px;
+    border: none;
+    font-size:2em;
+    border-radius:2px;
+
+    background-color: rgb(35,35,45);
+
+    border:1px solid goldenrod;
+}
+
+select {
+    color: gold;
+}
+
+
+input[type=radio] {
+    background-color:hotpink;
+    display: inline;
+    position: absolute;
+    visibility: collapse;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    top:25%;
+    right:5%;
+}
+
+input[type=radio]:checked {
+    transform: scale(2);
+    transform-origin: center;
+}
+
+input[type=radio]:checked + label {
+    background-color:goldenrod;
+    color: rgb(35,35,45);
+    border:1px solid gold;
+}
+
+input[type=submit] {
+    font-family: 'Folkard', Arial, sans-serif;
+    font-size: 28px;
+    background-color: goldenrod;
+    border-top:1px solid gold;
+    border-left:1px solid gold;
+    cursor: pointer;
+    /* background-color: deepskyblue; */
+    /* background-color: darkseagreen; */
+    margin-top: 15px;
+    box-shadow: 1px 1px 30px 4px black;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: gold;
+    box-shadow: 2px 2px 8px 3px black;
+}
+
+.character__creation {
+    background-color: white;
+    background-color: #f7eddb;
+    background-image: url('../res/card_bg.jpg');
+    border:1px solid #7B561D;
+    min-height: 300px;
+    margin-top:15px;
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow:4px 4px 14px 1px rgba(0,0,0,0.8);
+}
+
+#character__name {
+    display: inline-block;
+}
+
+#character__job {
+    text-transform:uppercase;
+    font-size: 1.4em;
+    line-height: 0;
+    letter-spacing: 8px;
+    color: #dec790;
+}
+
+/*
+Creation of the cards with opacity
+*/
+.display--off {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.14s ease;
+}
+.display--on {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.28s ease;
+}
+/*
+Helpers
+*/
+.img__logo {
+    display: block;
+    margin:25px auto 35px;
+    padding-left:15px;
+}
+
+.img__icon--gender {
+    position:absolute;
+    top: 25%;
+    right: 5%;
+}
+
+.img__icon--mid {
+    vertical-align:text-bottom;
+}
+
+.fourth {
+    width: 29%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    vertical-align: top;
+}
+.fifth {
+    width: 19%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    vertical-align: top;
+}
+.half {
+    width: 49%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    vertical-align: top;
+    position: relative;
+}
+
+.four-fifth {
+    width: 79%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    vertical-align: top;
+}
