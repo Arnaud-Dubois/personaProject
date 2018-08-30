@@ -107,44 +107,34 @@ const races = {
 
 const jobs = {
     merchant: {
-        name: 'marchand',
-        stuff: ['Lanterne','Couteau','Turban','Bourse','Potion','Poison'],
+        name: 'marchand'
     },
     bard: {
-        name: 'barde',
-        stuff: ['Harpe','Ukulele','Violon','Guitare','Morgenstern','Cimeterre','Arc'],
+        name: 'barde'
     },
     druid: {
-        name: 'druide',
-        stuff: ['Peau de loup','Baton','Griffes d\'ours','Une pierre','Collier'],
+        name: 'druide'
     },
     magician: {
-        name: 'magicien',
-        stuff: ['Orbe','Parchemin','Un grimoire','Canne','Baguette','Chapeau pointu','Poudre magique'],
+        name: 'magicien'
     },
     monk: {
-        name: 'moine',
-        stuff: ['Un slip','Un coup de poing','Un rosaire','Un nunchuk'],
+        name: 'moine'
     },
     warrior: {
-        name: 'guerrier',
-        stuff: ['Arme tranchante','Arme contondante','Arme agassante','Un kilt','Un casque de viking','Un drapeau'],
+        name: 'guerrier'
     },
     paladin: {
-        name: 'paladin',
-        stuff: ['Une épée et un bouclier','Une bible','Une armure très brillante','Morgenstern','Hallebarde']
+        name: 'paladin'
     },
     priest: {
-        name: 'prêtre',
-        stuff: ['Une croix','Une dague','Un cierge','Du tissu','Un fouet']
+        name: 'prêtre'
     },
     ranger: {
-        name: 'rôdeur',
-        stuff: ['Un perroquet sur l\'épaule','Une hache','Des pantoufles en peau d\'ours','Une armure en cuir']
+        name: 'rôdeur'
     },
     thief: {
-        name: 'roublard',
-        stuff: ['Une bourse','Des dagues','Des chaussures de ninja','Un trefle','Une corde']
+        name: 'roublard'
     }
 }
 
@@ -156,6 +146,18 @@ const spec = ['Du Nord','Du Sud','Poilu','Imposant','Petit','Des forêts','Des m
 const traits = ['Aimable','Sombre','Névrosé','Hautain','Fourbe','Confiant','Agile','Beau-parleur','Isolé','Ami des animaux','Robuste',
 'Bienveillant','Fanatique','Inquisiteur','Lunatique','Musclé','Discipliné','Aveugle','Sourd','Muet','Irritable','Érudit','Conciliant','Sociable',
 'Poète','Confiant','Bruyant','Pauvre','Riche','Passif agressif','Agressif','Hautain','Solitaire','Grincheux'
+]
+
+const stuff = ['Une bourse','Des dagues','Des chaussures de ninja','Un trefle','Une corde','Un perroquet sur l\'épaule','Une hache',
+'Des pantoufles en peau d\'ours','Une armure en cuir','Une croix','Une dague','Un cierge','Du tissu','Un fouet',
+'Une épée et un bouclier','Une bible','Une armure très brillante','Morgenstern','Hallebarde',
+'Arme tranchante','Arme contondante','Arme agassante','Un kilt','Un casque de viking','Un drapeau',
+'Un slip','Un coup de poing','Un rosaire','Un nunchuk',
+'Orbe','Parchemin','Un grimoire','Canne','Baguette','Chapeau pointu','Poudre magique',
+'Peau de loup','Baton','Griffes d\'ours','Une pierre','Collier',
+'Harpe','Ukulele','Violon','Guitare','Morgenstern','Cimeterre','Arc',
+'Lanterne','Couteau','Turban','Bourse','Potion','Poison'
+
 ]
 
 

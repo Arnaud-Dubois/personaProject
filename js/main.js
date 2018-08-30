@@ -14,12 +14,7 @@ let chrBox = document.querySelector('.character__creation');
 btn.addEventListener('click', generateChar);
 
 
-// RNG Function to generate random integer for the jobs
-let max = jobs.length;
-// console.log(max);
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
+
 
 // Flag the gender
 
@@ -106,7 +101,7 @@ function generateChar() {
             y = jobs.merchant
     }
 
-    // Generate the Name depending of the sex with gender() function
+    // Generate the Name depending on the sex with gender() function
     
     let isMale = gender();
     if (isMale == true) {
@@ -115,9 +110,17 @@ function generateChar() {
         firstName = x.femaleFirstName[Math.floor(x.femaleFirstName.length*Math.random())];
     }
     let lastName = x.lastName[Math.floor(x.lastName.length*Math.random())];
+
+    // RNG Function to generate random integer for the jobs
+    let max = jobs.length;
+    // console.log(max);
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
     
     // Job Random
-     let getRngInt = getRandomInt(max);
+     let getRngInt = getRandomInt(3);
+     console.log(getRngInt);
     // let job = jobs[getRngInt];
 
     // Job
@@ -140,8 +143,10 @@ function generateChar() {
 
     // Equipment
     // let equipment = stuff[getRngInt];
-    let equipment = y.stuff[Math.floor(y.stuff.length*Math.random())];
-
+    // let equipment = y.stuff[Math.floor(y.stuff.length*Math.random())];
+    let equipment = stuff[Math.floor(stuff.length*Math.random())] + ', ' +
+                    stuff[Math.floor(stuff.length*Math.random())] + ', ' +
+                    stuff[Math.floor(stuff.length*Math.random())];
 
 
     // Switch CSS to display:block
