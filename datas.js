@@ -105,38 +105,52 @@ const races = {
     }
 }
 
+// const jobs = {
+//     merchant: {
+//         name: 'marchand'
+//     },
+//     bard: {
+//         name: 'barde'
+//     },
+//     druid: {
+//         name: 'druide'
+//     },
+//     magician: {
+//         name: 'magicien'
+//     },
+//     monk: {
+//         name: 'moine'
+//     },
+//     warrior: {
+//         name: 'guerrier'
+//     },
+//     paladin: {
+//         name: 'paladin'
+//     },
+//     priest: {
+//         name: 'prêtre'
+//     },
+//     ranger: {
+//         name: 'rôdeur'
+//     },
+//     thief: {
+//         name: 'roublard'
+//     }
+// }
+
 const jobs = {
-    merchant: {
-        name: 'marchand'
-    },
-    bard: {
-        name: 'barde'
-    },
-    druid: {
-        name: 'druide'
-    },
-    magician: {
-        name: 'magicien'
-    },
-    monk: {
-        name: 'moine'
-    },
-    warrior: {
-        name: 'guerrier'
-    },
-    paladin: {
-        name: 'paladin'
-    },
-    priest: {
-        name: 'prêtre'
-    },
-    ranger: {
-        name: 'rôdeur'
-    },
-    thief: {
-        name: 'roublard'
-    }
+    fighter : ['Barde','Druide','Magicien','Moine','Guerrier','Paladin','Prêtre','Rôdeur','Roublard','Chevalier','Conjurateur','Inquisiteur','Magus',
+        'Ninja','Oracle','Pistolier','Samourai','Sorcière','Chaman','Chasseur','Hypnotiseur','Médium','Psychiste'
+    ],
+    civil : [
+        'Chasseur de baleines', 'Boucher','Policier','Avocat','Huissier','Garde','Marchand','Boulanger','Acrobate','Voleur','Enquêteur','Paysan','Noble',
+        'Alchimiste','Forgeron','Poissonnier','Montagnard','Artisan','Couturier','Homme de main','Ivrogne','Aubergiste','Clown','Prisonier','Fauconnier',
+        'Machniste','Fonctionnaire','Intermittant du spectacle','Vendeur de breloques',
+    ]
 }
+
+
+
 
 const spec = ['Du Nord','Du Sud','Poilu','Imposant','Petit','Des forêts','Des montagnes','Des Lacs','Doigts de fée','Ancien','Jeune',
 'Peau pâle','Peau noire','Blond','De la nature','D\'un autre monde','Adepte de la magie','Peau étrange','Costaud','Ballafré',
@@ -150,13 +164,13 @@ const traits = ['Aimable','Sombre','Névrosé','Hautain','Fourbe','Confiant','Ag
 
 const stuff = ['Une bourse','Des dagues','Des chaussures de ninja','Un trefle','Une corde','Un perroquet sur l\'épaule','Une hache',
 'Des pantoufles en peau d\'ours','Une armure en cuir','Une croix','Une dague','Un cierge','Du tissu','Un fouet',
-'Une épée et un bouclier','Une bible','Une armure très brillante','Morgenstern','Hallebarde',
+'Une épée et un bouclier','Une bible','Une armure très brillante','Morgenstern','Hallebarde','Une arme rouillée','Une boite mystère',
 'Arme tranchante','Arme contondante','Arme agassante','Un kilt','Un casque de viking','Un drapeau',
-'Un slip','Un coup de poing','Un rosaire','Un nunchuk',
-'Orbe','Parchemin','Un grimoire','Canne','Baguette','Chapeau pointu','Poudre magique',
+'Un slip','Un coup de poing','Un rosaire','Un nunchuk','Un harpon',
+'Une Orbe','Un Parchemin','Un grimoire','Canne','Baguette','Chapeau pointu','Poudre magique',
 'Peau de loup','Baton','Griffes d\'ours','Une pierre','Collier',
-'Harpe','Ukulele','Violon','Guitare','Morgenstern','Cimeterre','Arc',
-'Lanterne','Couteau','Turban','Bourse','Potion','Poison'
+'Harpe','Ukulele','Violon','Guitare','Morgenstern','Cimeterre','Arc','Tambourin',
+'Lanterne','Couteau','Turban','Bourse','Potion','Poison','Un caillou','Des babouches',
 
 ]
 

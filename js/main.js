@@ -67,39 +67,50 @@ function generateChar() {
     let jobSelect = document.getElementById('job__selector').value;
 
     switch (jobSelect) {
-        case 'marchand':
-            y = jobs.merchant
+        case 'combattant':
+            y = jobs.fighter
             break;
-        case 'barde':
-            y = jobs.bard
-            break;
-        case 'druide':
-            y = jobs.druid
-            break;
-        case 'magicien':
-            y = jobs.magician
-            break;
-        case 'moine':
-            y = jobs.monk
-            break
-        case 'guerrier':
-            y = jobs.warrior
-            break;
-        case 'paladin':
-            y = jobs.paladin
-            break;
-        case 'prêtre':
-            y = jobs.priest
-            break;
-        case 'rodeur':
-            y = jobs.ranger
-            break;
-        case 'roublard':
-            y = jobs.thief
+        case 'civil':
+            y = jobs.civil
             break;
         default :
-            y = jobs.merchant
+            y = jobs.fighter
     }
+
+    // switch (jobSelect) {
+    //     case 'marchand':
+    //         y = jobs.merchant
+    //         break;
+    //     case 'barde':
+    //         y = jobs.bard
+    //         break;
+    //     case 'druide':
+    //         y = jobs.druid
+    //         break;
+    //     case 'magicien':
+    //         y = jobs.magician
+    //         break;
+    //     case 'moine':
+    //         y = jobs.monk
+    //         break
+    //     case 'guerrier':
+    //         y = jobs.warrior
+    //         break;
+    //     case 'paladin':
+    //         y = jobs.paladin
+    //         break;
+    //     case 'prêtre':
+    //         y = jobs.priest
+    //         break;
+    //     case 'rodeur':
+    //         y = jobs.ranger
+    //         break;
+    //     case 'roublard':
+    //         y = jobs.thief
+    //         break;
+    //     default :
+    //         y = jobs.merchant
+    // }
 
     // Generate the Name depending on the sex with gender() function
     
@@ -125,7 +136,7 @@ function generateChar() {
 
     // Job
 
-    let job = y;
+    let job = y[Math.floor(y.length*Math.random())];
     
     // Racial chaned in Specificity
     // let racial = [];
@@ -145,8 +156,8 @@ function generateChar() {
     // let equipment = stuff[getRngInt];
     // let equipment = y.stuff[Math.floor(y.stuff.length*Math.random())];
     let equipment = stuff[Math.floor(stuff.length*Math.random())] + ', ' +
-                    stuff[Math.floor(stuff.length*Math.random())] + ', ' +
-                    stuff[Math.floor(stuff.length*Math.random())];
+                    stuff[Math.floor(stuff.length*Math.random())].toLowerCase() + ', ' +
+                    stuff[Math.floor(stuff.length*Math.random())].toLowerCase();
 
 
     // Switch CSS to display:block
@@ -158,7 +169,7 @@ function generateChar() {
 
             // Add the character DATAS into the DOM
             chrName.innerHTML = firstName + ' ' + lastName;
-            chrJob.innerHTML = job.name;
+            chrJob.innerHTML = job;
             chrRacial.innerHTML =  specificity;
             chrTrait.innerHTML =  trait;
             chrStuff.innerHTML =  equipment;
@@ -172,7 +183,7 @@ function generateChar() {
 
             // Add the character DATAS into the DOM
             chrName.innerHTML = firstName + ' ' + lastName;
-            chrJob.innerHTML = job.name;
+            chrJob.innerHTML = job;
             chrRacial.innerHTML =  specificity;
             chrTrait.innerHTML =  trait;
             chrStuff.innerHTML =  equipment;
